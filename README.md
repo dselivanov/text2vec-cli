@@ -1,11 +1,11 @@
-You've just discovered **[text2vec](http://text2vec.org)**! CLI (command line interface) for GloVe training.
+You've just discovered **[text2vec](http://text2vec.org)** CLI (command line interface) for GloVe training.
 If you are familiar with R language it is worth first to check [main text2vec repository](https://github.com/dselivanov/text2vec).
 
 `text2vec-cli` made for those people who don't know R, but want to try alternative implementation of the GloVe algorithm. Compared to [original](https://github.com/stanfordnlp/GloVe) implemetation `text2vec` usually ~2 times faster. It is also can fit word embeddings model with `L1` regularization, which can be very useful for small datasets - algorithm can generalize much better than vanilla GloVe. 
 
 One possible limitation of `text2vec` is that it calculates co-occurence statistics in RAM. This **can be a problem for very large corpuses with very large vocabularies**. For example you can process english wikipedia dump with vocabulary consisting of 400000 unique terms and window=10 on machine with 32gb of RAM.
 
-# Isntallation
+# Installation
 
 ## R
 You need R 3.2+ be installed - check [CRAN](https://cran.r-project.org/) for instructions (should be very straightforward).
