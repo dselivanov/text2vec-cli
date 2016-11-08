@@ -18,10 +18,11 @@ For main linux distribultions it should be even simpler:
 # change following line accordingly to your system:
 # https://cran.r-project.org/bin/linux/ubuntu/
 # here is string for ubuntu 14.04
-sudo echo "deb https://cloud.r-project.org/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list
+echo 'deb https://cloud.r-project.org/bin/linux/ubuntu trusty/' | sudo tee --append /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+sudo apt-key update
 # install dependencies
-sudo apt-get install -y libssl-dev libcurl4-openssl-dev
+sudo apt-get install -y libssl-dev libcurl4-openssl-dev git
 # isntall R
 sudo apt-get install -y r-base r-base-dev
 ```
