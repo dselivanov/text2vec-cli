@@ -1,4 +1,4 @@
-#!/usr/bin/env Rscript --vanilla
+#!/usr/bin/env Rscript
 #------------------------------------------------
 source("common/common.R")
 DEFAULT_VOCAB_MIN_COUNT = 5L

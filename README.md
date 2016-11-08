@@ -37,7 +37,7 @@ chmod +x install.R vocabulary.R cooccurence.R glove.R analogy.R
 
 And install text2vec with dependencies:
 ```sh
-./isntall.R
+./install.R
 ```
 
 # Usage
@@ -118,7 +118,7 @@ Arguments:
 
 Arguments: 
 
-1. `cooccurences_file` - name of the output file
+1. `cooccurences_file` - name of the file with co-occurence statistics
 1. `word_vectors_size` - dimension of word embeddings
 1. `iter` - maximum number of iterations of optimization algorithm
 1. `x_max` - maximum value of co-occurence value. Corresponds to `X_MAX` in original implementation.
