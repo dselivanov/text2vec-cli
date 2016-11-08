@@ -15,13 +15,22 @@ For main linux distribultions it should be even simpler:
 ### Ubuntu
 
 ```sh
-sudo apt-get install r-base r-base-dev
+# change following line accordingly to your system:
+# https://cran.r-project.org/bin/linux/ubuntu/
+# here is string for ubuntu 14.04
+sudo echo "deb https://cloud.r-project.org/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+# install dependencies
+sudo apt-get install -y libssl-dev libcurl4-openssl-dev
+# isntall R
+sudo apt-get install -y r-base r-base-dev
 ```
 
 ### Centos/Fedora/RHEL
 
+Need something similar to instructions above. See how to install fresh R (3.2+) [here](https://cran.r-project.org/bin/linux/redhat/README).
 ```sh
-sudo yum install R
+sudo yum install openssl-devel libcurl-openssl-devel R
 ```
 
 ## text2vec
