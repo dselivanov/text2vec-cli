@@ -37,7 +37,7 @@ chmod +x install.R vocabulary.R cooccurence.R glove.R analogy.R
 
 And install text2vec with dependencies:
 ```sh
-./isntall.R
+./install.R
 ```
 
 # Usage
